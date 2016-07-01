@@ -10,11 +10,13 @@
 		F38E0EAC1D24C1730043EBBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F38E0EAB1D24C1730043EBBA /* main.m */; };
 		F38E0EAF1D24C1730043EBBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F38E0EAE1D24C1730043EBBA /* AppDelegate.m */; };
 		F38E0EB21D24C1730043EBBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38E0EB11D24C1730043EBBA /* ViewController.m */; };
-		F38E0EB51D24C1730043EBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38E0EB31D24C1730043EBBA /* Main.storyboard */; };
 		F38E0EB71D24C1730043EBBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F38E0EB61D24C1730043EBBA /* Assets.xcassets */; };
 		F38E0EBA1D24C1730043EBBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38E0EB81D24C1730043EBBA /* LaunchScreen.storyboard */; };
 		F38E0EC51D24C1730043EBBA /* CYDynamicTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F38E0EC41D24C1730043EBBA /* CYDynamicTextTests.m */; };
 		F38E0ED01D24C1730043EBBA /* CYDynamicTextUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F38E0ECF1D24C1730043EBBA /* CYDynamicTextUITests.m */; };
+		F38E0EE21D24C26F0043EBBA /* CYFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F38E0EDF1D24C26F0043EBBA /* CYFontManager.m */; };
+		F38E0EE61D24C2B40043EBBA /* SlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38E0EE51D24C2B40043EBBA /* SlideViewController.m */; };
+		F38E0EEC1D24C5D00043EBBA /* UIFontDescriptor+CYCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = F38E0EEB1D24C5D00043EBBA /* UIFontDescriptor+CYCustomFont.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,6 @@
 		F38E0EAE1D24C1730043EBBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F38E0EB01D24C1730043EBBA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F38E0EB11D24C1730043EBBA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F38E0EB41D24C1730043EBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F38E0EB61D24C1730043EBBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F38E0EB91D24C1730043EBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F38E0EBB1D24C1730043EBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +52,12 @@
 		F38E0ECB1D24C1730043EBBA /* CYDynamicTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYDynamicTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38E0ECF1D24C1730043EBBA /* CYDynamicTextUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYDynamicTextUITests.m; sourceTree = "<group>"; };
 		F38E0ED11D24C1730043EBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F38E0EDE1D24C26F0043EBBA /* CYFontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYFontManager.h; sourceTree = "<group>"; };
+		F38E0EDF1D24C26F0043EBBA /* CYFontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYFontManager.m; sourceTree = "<group>"; };
+		F38E0EE41D24C2B40043EBBA /* SlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideViewController.h; sourceTree = "<group>"; };
+		F38E0EE51D24C2B40043EBBA /* SlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideViewController.m; sourceTree = "<group>"; };
+		F38E0EEA1D24C5D00043EBBA /* UIFontDescriptor+CYCustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFontDescriptor+CYCustomFont.h"; sourceTree = "<group>"; };
+		F38E0EEB1D24C5D00043EBBA /* UIFontDescriptor+CYCustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFontDescriptor+CYCustomFont.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +108,13 @@
 		F38E0EA91D24C1730043EBBA /* CYDynamicText */ = {
 			isa = PBXGroup;
 			children = (
+				F38E0EE41D24C2B40043EBBA /* SlideViewController.h */,
+				F38E0EE51D24C2B40043EBBA /* SlideViewController.m */,
+				F38E0EDD1D24C2230043EBBA /* Manager */,
 				F38E0EAD1D24C1730043EBBA /* AppDelegate.h */,
 				F38E0EAE1D24C1730043EBBA /* AppDelegate.m */,
 				F38E0EB01D24C1730043EBBA /* ViewController.h */,
 				F38E0EB11D24C1730043EBBA /* ViewController.m */,
-				F38E0EB31D24C1730043EBBA /* Main.storyboard */,
 				F38E0EB61D24C1730043EBBA /* Assets.xcassets */,
 				F38E0EB81D24C1730043EBBA /* LaunchScreen.storyboard */,
 				F38E0EBB1D24C1730043EBBA /* Info.plist */,
@@ -138,6 +147,17 @@
 				F38E0ED11D24C1730043EBBA /* Info.plist */,
 			);
 			path = CYDynamicTextUITests;
+			sourceTree = "<group>";
+		};
+		F38E0EDD1D24C2230043EBBA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F38E0EDE1D24C26F0043EBBA /* CYFontManager.h */,
+				F38E0EDF1D24C26F0043EBBA /* CYFontManager.m */,
+				F38E0EEA1D24C5D00043EBBA /* UIFontDescriptor+CYCustomFont.h */,
+				F38E0EEB1D24C5D00043EBBA /* UIFontDescriptor+CYCustomFont.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +265,6 @@
 			files = (
 				F38E0EBA1D24C1730043EBBA /* LaunchScreen.storyboard in Resources */,
 				F38E0EB71D24C1730043EBBA /* Assets.xcassets in Resources */,
-				F38E0EB51D24C1730043EBBA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F38E0EE21D24C26F0043EBBA /* CYFontManager.m in Sources */,
+				F38E0EEC1D24C5D00043EBBA /* UIFontDescriptor+CYCustomFont.m in Sources */,
 				F38E0EB21D24C1730043EBBA /* ViewController.m in Sources */,
+				F38E0EE61D24C2B40043EBBA /* SlideViewController.m in Sources */,
 				F38E0EAF1D24C1730043EBBA /* AppDelegate.m in Sources */,
 				F38E0EAC1D24C1730043EBBA /* main.m in Sources */,
 			);
@@ -308,14 +330,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F38E0EB31D24C1730043EBBA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F38E0EB41D24C1730043EBBA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F38E0EB81D24C1730043EBBA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
