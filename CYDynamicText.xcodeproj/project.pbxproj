@@ -510,6 +510,7 @@
 				F38E0ED61D24C1730043EBBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F38E0ED71D24C1730043EBBA /* Build configuration list for PBXNativeTarget "CYDynamicTextTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +519,7 @@
 				F38E0ED91D24C1730043EBBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F38E0EDA1D24C1730043EBBA /* Build configuration list for PBXNativeTarget "CYDynamicTextUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +528,7 @@
 				F38E0EDC1D24C1730043EBBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
