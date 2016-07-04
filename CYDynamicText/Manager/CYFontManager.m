@@ -12,8 +12,14 @@
 
 NSString *const CYFontDidChangeNotification = @"CYFontDidChangeNotification";
 NSString *const CYFontSizeCategoryNewValueKey = @"CYFontSizeCategoryNewValueKey";
+NSString *const CYDynamicFontUserDefaultKey = @"CYDynamicFontUserDefaultKey";
 
 static CYFontManager* defaultManager = nil;
+
+- (NSString*)contentSizeStr
+{
+    return [self getUserDefaultDynamicFontSizeStr];
+}
 
 + (CYFontManager*)defaultManager
 {
@@ -45,5 +51,21 @@ static CYFontManager* defaultManager = nil;
     [[NSNotificationCenter defaultCenter] postNotificationName:CYFontDidChangeNotification object:nil userInfo:@{CYFontSizeCategoryNewValueKey:contentSizeStr}];
 }
 
+- (void)saveDynamicFontSizeToUserDefault:(NSString*)dynamicFontSizeStr
+{
+    if (![dynamicFontSizeStr isKindOfClass:[NSString class]] || dynamicFontSizeStr == nil) {
+        
+        return;
+    }
+    NSUserDefaults *info = [NSUserDefaults standardUserDefaults];
+    [info setObject:dynamicFontSizeStr forKey:CYDynamicFontUserDefaultKey];
+    [info synchronize];
+}
+
+- (NSString*)getUserDefaultDynamicFontSizeStr
+{
+    NSUserDefaults *info = [NSUserDefaults standardUserDefaults];
+    return [info objectForKey:CYDynamicFontUserDefaultKey];
+}
 
 @end

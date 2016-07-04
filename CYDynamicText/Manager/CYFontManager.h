@@ -11,13 +11,16 @@
 
 extern NSString *const CYFontDidChangeNotification;
 extern NSString *const CYFontSizeCategoryNewValueKey;
+extern NSString *const CYDynamicFontUserDefaultKey;
 
 @interface CYFontManager : NSObject
 
-@property (nonatomic, copy) NSString* contentSizeStr;
+@property (nonatomic, copy, readonly) NSString* contentSizeStr;
 @property (nonatomic) BOOL recieveSystemNotification;       //default is NO
 
 + (CYFontManager*)defaultManager;
 - (void)postCYFontNotificaiton:(NSString*)contentSizeStr;
+- (void)saveDynamicFontSizeToUserDefault:(NSString*)dynamicFontSizeStr;
+- (NSString*)getUserDefaultDynamicFontSizeStr;
 
 @end
