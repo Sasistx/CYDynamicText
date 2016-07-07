@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CYDynamicText"
-  s.version      = "0.9.2"
+  s.version      = "0.9.3"
   s.summary      = "A custom dynamic font manager."
   s.description  = "A custom dynamic font manager."
 
