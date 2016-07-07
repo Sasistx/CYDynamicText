@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+NSString *const CYUIFontTextStyleCaption3;
+NSString *const CYUIFontTextStyleCaption4;
+
 @interface UIFontDescriptor (CYCustomFont)
 
 + (UIFontDescriptor *)preferredCYAvenirNextFontDescriptorWithTextStyle:(NSString *)style contentSizeStr:(NSString*)contentSizeStr;
