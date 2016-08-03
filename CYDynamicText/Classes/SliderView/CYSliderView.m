@@ -28,7 +28,7 @@
         _originY = frame.size.height / 2 - 10;
         _count = count;
         _currentIndex = 0;
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [UIColor clearColor];
         [self createThumbImageView];
         [self updateThumbImagePositionWithIndex:0];
     }
