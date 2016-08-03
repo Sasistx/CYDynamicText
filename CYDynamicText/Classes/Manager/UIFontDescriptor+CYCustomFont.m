@@ -118,18 +118,18 @@ NSString *const CYUIFontTextStyleCaption4 = @"CYUIFontTextStyleCaption4";
                                   UIContentSizeCategoryExtraSmall: @10,},
                           
                           CYUIFontTextStyleCaption4: @{
-                                  UIContentSizeCategoryAccessibilityExtraExtraExtraLarge: @15,
-                                  UIContentSizeCategoryAccessibilityExtraExtraLarge: @14,
-                                  UIContentSizeCategoryAccessibilityExtraLarge: @13,
-                                  UIContentSizeCategoryAccessibilityLarge: @13,
-                                  UIContentSizeCategoryAccessibilityMedium: @12,
-                                  UIContentSizeCategoryExtraExtraExtraLarge: @12,
-                                  UIContentSizeCategoryExtraExtraLarge: @11,
-                                  UIContentSizeCategoryExtraLarge: @11,
-                                  UIContentSizeCategoryLarge: @10,
-                                  UIContentSizeCategoryMedium: @10,
-                                  UIContentSizeCategorySmall: @9,
-                                  UIContentSizeCategoryExtraSmall: @9,},
+                                  UIContentSizeCategoryAccessibilityExtraExtraExtraLarge: @28,
+                                  UIContentSizeCategoryAccessibilityExtraExtraLarge: @24,
+                                  UIContentSizeCategoryAccessibilityExtraLarge: @22,
+                                  UIContentSizeCategoryAccessibilityLarge: @20,
+                                  UIContentSizeCategoryAccessibilityMedium: @19,
+                                  UIContentSizeCategoryExtraExtraExtraLarge: @18,
+                                  UIContentSizeCategoryExtraExtraLarge: @17,
+                                  UIContentSizeCategoryExtraLarge: @16,
+                                  UIContentSizeCategoryLarge: @14,
+                                  UIContentSizeCategoryMedium: @14,
+                                  UIContentSizeCategorySmall: @12,
+                                  UIContentSizeCategoryExtraSmall: @10,},
                           };
     });
     
