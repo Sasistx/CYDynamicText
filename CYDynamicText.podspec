@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CYDynamicText"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A custom dynamic font manager."
   s.description  = "A custom dynamic font manager."
 
@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Sasistx/CYDynamicText.git", :tag => s.version }
 
   s.source_files  = "CYDynamicText/Classes/**/*.{h,m}"
-  s.resources    = "CYDynamicText/Resources/.*png"
+  s.resources    = "CYDynamicText/Resources/*.png"
 end
