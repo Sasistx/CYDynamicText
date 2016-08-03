@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SlideViewController.h"
+#import "CYFontSliderControl.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -19,10 +20,13 @@
     
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UITableView* tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    [self.view addSubview:tableView];
-    tableView.delegate = self;
-    tableView.dataSource = self;
+    
+    CYFontSliderControl* sliderControl = [CYFontSliderControl fontSliderControlWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 80) titles:@[@"正常", @"大", @"超大", @"特大"] valueDidChanged:^(NSInteger index) {
+        
+        NSLog(@"index:%zi", index);
+    }];
+    sliderControl.currentIndex = 1;
+    [self.view addSubview:sliderControl];
     
     UIBarButtonItem* item = [[UIBarButtonItem alloc] initWithTitle:@"设置" style:UIBarButtonItemStylePlain target:self action:@selector(settingView:)];
     self.navigationItem.rightBarButtonItem = item;
