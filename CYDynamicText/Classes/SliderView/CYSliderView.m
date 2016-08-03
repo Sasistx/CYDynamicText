@@ -25,7 +25,7 @@
     if (self) {
         
         _originX = 40;
-        _originY = frame.size.height / 2;
+        _originY = frame.size.height / 2 - 10;
         _count = count;
         _currentIndex = 0;
         self.backgroundColor = [UIColor whiteColor];

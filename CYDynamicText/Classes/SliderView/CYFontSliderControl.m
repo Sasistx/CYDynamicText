@@ -72,7 +72,7 @@
 
 - (void)createTitleWithFrame:(CGRect)frame
 {
-    CGFloat titleCenterY = frame.size.height / 2;
+    CGFloat titleCenterY = frame.size.height / 2 + 10;
     
     for (NSInteger i = 0; i < _count; i++) {
         

@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    CYFontSliderControl* sliderControl = [CYFontSliderControl fontSliderControlWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 80) titles:@[@"正常", @"大", @"超大", @"特大"] valueDidChanged:^(NSInteger index) {
+    CYFontSliderControl* sliderControl = [CYFontSliderControl fontSliderControlWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 100) titles:@[@"正常", @"大", @"超大", @"特大"] valueDidChanged:^(NSInteger index) {
         
         NSLog(@"index:%zi", index);
     }];
