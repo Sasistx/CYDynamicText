@@ -14,11 +14,13 @@ NSString *const CYFontDidChangeNotification = @"CYFontDidChangeNotification";
 NSString *const CYFontSizeCategoryNewValueKey = @"CYFontSizeCategoryNewValueKey";
 NSString *const CYDynamicFontUserDefaultKey = @"CYDynamicFontUserDefaultKey";
 
+@synthesize contentSizeStr = _contentSizeStr;
+
 static CYFontManager* defaultManager = nil;
 
 - (NSString*)contentSizeStr
 {
-    return [self getUserDefaultDynamicFontSizeStr];
+    return _contentSizeStr ? : [self getUserDefaultDynamicFontSizeStr];
 }
 
 + (CYFontManager*)defaultManager
@@ -53,13 +55,14 @@ static CYFontManager* defaultManager = nil;
 
 - (void)saveDynamicFontSizeToUserDefault:(NSString*)dynamicFontSizeStr
 {
-    if (![dynamicFontSizeStr isKindOfClass:[NSString class]] || dynamicFontSizeStr == nil) {
+    if (![dynamicFontSizeStr isKindOfClass:[NSString class]] || dynamicFontSizeStr == nil || [dynamicFontSizeStr isEqualToString:@""]) {
         
         return;
     }
     NSUserDefaults *info = [NSUserDefaults standardUserDefaults];
     [info setObject:dynamicFontSizeStr forKey:CYDynamicFontUserDefaultKey];
     [info synchronize];
+    _contentSizeStr = dynamicFontSizeStr;
 }
 
 - (NSString*)getUserDefaultDynamicFontSizeStr
