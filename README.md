@@ -1,5 +1,5 @@
 # CYDynamicText
-A Dynamic Font Manger
+A Dynamic Font Manager
 
 ##使用方法：
 
